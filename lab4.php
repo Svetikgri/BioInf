@@ -1,6 +1,7 @@
 <?php
-
-$s1 = "AAAACCCGGT";
+$s1 = fgets(STDIN);//var_dump($s1);
+//$res = fgets(STDIN);
+//$s1 = "AAAACCCGGT";
 $res = '';//строка
 for ($i = strlen($s1); $i >= 0; $i--)
 {
@@ -18,6 +19,11 @@ for ($i = strlen($s1); $i >= 0; $i--)
 
 
 }
-echo $res;
+fwrite(STDOUT,$res);
+//echo $res;
+
 
 ?>
+
+
+
